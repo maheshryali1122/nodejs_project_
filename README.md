@@ -102,7 +102,7 @@
   ![image](./Images/sonaroutput.JPG)
 
 
-### Configure docker and build, push the image to Docker hub:
+### Configure docker build, push the image to Docker hub:
   * Go to Dashboard => Manage Plugins => Available plugins => Search for Docker and install these plugins.
     - Docker
     - Docker Commons
@@ -136,7 +136,7 @@
   * Take two ubuntu instances one for k8s master and one for kubernetes worker node.
   * Copy the config file to the local directory present in kubernetes master.
   * The config present in the following directory
-  `/home/ubuntu/.kube.config`
+  `/home/ubuntu/.kube/config`
   * Install kubectl in Jenkins master and in both kubernetes nodes.
   * Install the following plugins in jenkins server.
     - kubernetes credentials
