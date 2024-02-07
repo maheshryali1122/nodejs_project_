@@ -177,7 +177,7 @@
   ```
   * After executing the jenkins build. We will get following output.
     ![image](./Images/k8sjenkinsoutput.JPG)
-  * After executing the deployment and service file. Navigate to http://<ipaddress>:port. We will see the output as below.
+  * After executing the deployment and service file. Navigate to http://ipaddress:port. We will see the output as below.
 
    ![image](./Images/applicationoutput.JPG)
 
