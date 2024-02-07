@@ -7,7 +7,7 @@
 
 ### Configure Jenkins server, Docker, Trivy:
   * Create Jenkins server by using Terraform (terraform configuration files) and by executing the following commands.To store the statefile we needs backends as s3 in aws and for state locking create dynamodb.
-  * Create s3 bucket and dynamodb in AWS cloud. While creating dynamodb take string as "LockID"
+  * Create s3 bucket and dynamodb in AWS cloud for backends. While creating dynamodb take string as "LockID"
   * Execute the following commands.
     `Terraform init`,
   `Terraform apply -var-file="dev.tfvars" -auto-approve`
