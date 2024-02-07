@@ -35,7 +35,9 @@
 
 ### Configuring sonarqube server in manage jenkins:
   * Create a secret token in Sonar server and copy the token.
-  * Go to Jenkins dashboard => manage Jenkins => credentials => Add Secret Text  
+    ![image](./Images/sonartoken.JPG)
+  * Go to Jenkins dashboard => manage Jenkins => credentials => Add Secret Text 
+    ![image](./Images/sonartokenjenkins.JPG) 
   * Configure the sonar Dashboard => Manage Jenkins => system
     ![image](./Images/sonarsystemmanagejenkins.JPG)
   * Install sonar scanner in the tools.
@@ -94,6 +96,8 @@
 }
 }
     ```   
+  * The output in jenkins build.
+    ![image](./Images/sonarexecutionjenkins.JPG)
   * Build the declarative pipeline in jenkins server. After executing the build we will get the following output.
 
   ![image](./Images/sonaroutput.JPG)
@@ -170,9 +174,11 @@
             }
         }
   ```
+  * After executing the jenkins build. We will get following output.
+    ![image](./Images/k8sjenkinsoutput.JPG)
   * After executing the deployment and service file. Navigate to http://<ipaddress>:port. We will see the output as below.
 
-  * ![image](./Images/applicationoutput.JPG)
+   ![image](./Images/applicationoutput.JPG)
 
   * The stage view of overall build stages.
   ![image](./Images/buildstages.JPG)
