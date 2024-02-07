@@ -1,0 +1,30 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-deployment
+spec:
+  minReadySeconds: 3
+  replicas: 3
+  selector:
+    matchLabels: 
+      app: nodejsproject  
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+  template:
+    metadata:
+      name: nodejsproject
+      labels:
+        app: nodejsproject
+    spec:
+      containers:
+        - name: nodejsproject
+          image: maheshryali/nodejs:latest
+          ports:
+            - containerPort: 3000
+              protocol: TCP
+      imagePullSecrets:
+        - name: regcred        
