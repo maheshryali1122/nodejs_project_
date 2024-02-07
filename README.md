@@ -20,9 +20,9 @@
 
     ![image](./Images/sonar_container.JPG)
   * Install the following plugins in jenkins.
-        - Eclipse Temurin Installer
-        - SonarQube Scanner
-        - NodeJs Plugin
+        `Eclipse Temurin Installer`
+        `SonarQube Scanner`
+        `NodeJs Plugin`
 
     ![image](./Images/ecllipset.JPG)
     ![image](./Images/nodejs.JPG)
