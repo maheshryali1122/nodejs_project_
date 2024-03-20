@@ -1,16 +1,15 @@
 # Nodejs Application 
 ## About the project
- Deploying Nodejs microservice to kubernetes cluster by using different devops tools such as
- Jenkins, Github, Docker, Kubernetes, Terraform, SonarQube, Trivy, owasp dependency, Prometheus and Graphana and  AWS services.
+ Deploying a Node.js microservice to a Kubernetes cluster using various DevOps tools including Jenkins, GitHub, Docker, Kubernetes, Terraform, SonarQube, Trivy, OWASP Dependency Check, Prometheus, Grafana, and AWS services..
 
 # Getting Started
 
 ### Configure Jenkins server, Docker, Trivy:
-  * Create Jenkins server by using Terraform (terraform configuration files) and by executing the following commands.To store the statefile we needs backends as s3 in aws and for state locking create dynamodb.
-  * Create s3 bucket and dynamodb in AWS cloud for backends. While creating dynamodb take string as "LockID"
+  * To instantiate a Jenkins server utilizing Terraform configuration files, execute the following commands. In order to store the state file, employ AWS S3 as the backend, and for state locking, create a DynamoDB table.
+  * Create an Amazon S3 bucket and DynamoDB table in the AWS cloud to serve as backends. When creating the DynamoDB table, specify the attribute as "LockID" with a data type of string.
   * Execute the following commands.
-    `Terraform init`,
-  `Terraform apply -var-file="dev.tfvars" -auto-approve`
+    `terraform init`,
+  `terraform apply -var-file="dev.tfvars" -auto-approve`
   
   * Install docker and trivy in the server.
    
